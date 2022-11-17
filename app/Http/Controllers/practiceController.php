@@ -8,9 +8,10 @@ use App\Models\User;
 class practiceController extends Controller
 {
     public function manyToMany(){
-      $user = User::find(1);
- 
-        foreach ($user->roles as $role) {
+      $user = User::find(5);
+
+
+        foreach ($user->userroles as $role) {
             echo $role;
         }
     }

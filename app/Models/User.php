@@ -42,7 +42,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function roles(){
-        return $this->belongsToMany(role::class,'user_roles','userid','roleid');
+    public function userroles(){
+        return $this->belongsToMany(Role::class,'user_roles','userid','roleid');
     }
 }
